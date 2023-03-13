@@ -1,0 +1,122 @@
+
+<header class="section-header">  
+    <!----------->
+    <section class="header-main">
+      <div class="container">
+        <div class="row gy-3 align-items-center">
+          <div class="col-lg-2 col-sm-4 col-4">
+            <a href="" class="navbar-brand">
+              Ekart
+            </a> <!-- brand end.// -->
+          </div>
+          <div class="order-lg-last col-lg-5 col-sm-8 col-8">
+            <div class="float-end">
+             <!--login form .// -->
+              <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#loginModal"> 
+                  <i class="fa fa-user"></i>  <span class="ms-1 d-none d-sm-inline-block">Sign in  </span> 
+              </button>
+              <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="loginModalLabel">Login Form</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <form [formGroup] ='login'  (ngSubmit)="loginFormSubmit">
+                        <div class="mb-3">
+                          <label for="id_email" class="form-label">Email address</label>
+                          <input formControlName="email" [class.is-invalid]="emailField.touched && emailField.invalid" type="email"
+                            class="form-control" id="id_email">
+                          <div *ngIf="emailField.touched && emailField.hasError('required')" class="d-block invalid-feedback">Please
+                            provide a Email.</div>
+                          <div *ngIf="emailField.touched && emailField.hasError('email')" class="d-block invalid-feedback">Email
+                            address is
+                            not valid</div>
+                        </div>
+                        <div class="mb-3">
+                          <label for="id_Password" class="form-label">Password</label>
+                          <input formControlName="password" [class.is-invalid]="passwordField.touched && passwordField.invalid"
+                            type="password" class="form-control" id="id_Password">
+                          <div *ngIf="passwordField.touched && passwordField.hasError('required')" class="d-block invalid-feedback">
+                            Please
+                            provide a Password.</div>
+                        </div>
+                       
+                        <button [disabled]="login.invalid" type="submit" class=" mt-3 btn btn-primary w-100">Submit</button>
+                        <br>
+                        <a routerLink="../register" class="btn btn-link"> Don't have a Account Register</a>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a href="#" class="btn btn-light"> 
+                <i class="fa fa-heart"></i>  <span class="ms-1 d-none d-sm-inline-block">Wishlist</span>   
+              </a>
+              <a data-bs-toggle="offcanvas" href="#offcanvas_cart" class="btn btn-light"> 
+                <i class="fa fa-shopping-cart"></i> <span class="ms-1">My cart </span> 
+              </a>
+                </div>
+          </div> <!-- col end.// -->
+          <div class="col-lg-5 col-md-12 col-12">
+            <form action="#" class="">
+                    <div class="input-group">
+                      <input type="search" class="form-control" style="width:55%" placeholder="Search">
+                      <select class="form-select">
+                        <option value="">-Select-</option>
+                        <option value="codex">Brands</option>
+                        <option value="comments">Popular</option>
+                        <option value="content">Latest</option>
+                      </select>
+                      <button class="btn btn-primary">
+                        <i class="fa fa-search"></i> 
+                      </button>
+                    </div> <!-- input-group end.// -->
+                  </form>
+          </div> <!-- col end.// -->
+          
+        </div> <!-- row end.// -->
+      </div> <!-- container end.// -->
+    </section> <!-- header-main end.// -->
+    <nav class="navbar navbar-light bg-primary border-top navbar-expand-lg">
+      <div class="container">
+        <button class="navbar-toggler border" type="button" data-bs-toggle="collapse" data-bs-target="#navbar_main">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbar_main">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link ps-0" href='/home'> home </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href='/shop'>Product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href='layout'>Hot Offers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact">Item1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/chart">Item 2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/sidenav">Item 3</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="dropdown-toggle nav-link" href="#" data-bs-toggle="dropdown">
+                Others
+              </a>
+              <ul class="dropdown-menu">
+                <li> <a class="dropdown-item" href="#">Submenu one </a> </li>
+                <li> <a class="dropdown-item" href="#">Submenu two</a> </li>
+                <li> <a class="dropdown-item" href="#">Submenu three</a> </li>
+              </ul>
+            </li>
+          </ul>
+        </div> <!-- collapse end.// -->
+      </div> <!-- container end.// -->
+    </nav> <!-- navbar end.// -->
+  </header> <!-- section-header end.// -->

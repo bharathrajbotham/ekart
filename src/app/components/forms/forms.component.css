@@ -1,0 +1,15 @@
+.container{
+    background-color:ghostwhite;
+    width: 90%;
+    align-items: flex-start;
+    position: relative;
+    margin-left:2%;
+    margin-top: -5%;
+}
+.form-group{
+    padding: 2px;
+    font-size: small;
+}
+.form-control.ng-invalid.ng-touched{
+    border: 1px solid red;
+}

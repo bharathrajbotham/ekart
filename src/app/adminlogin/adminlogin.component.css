@@ -1,0 +1,78 @@
+.card{
+position: relative;
+ right: 25%;
+ left: 25%;
+ top: 10%;
+ bottom:50%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 2%;
+    word-wrap: break-word;
+    background-color: #F5F7FA
+        #B8C6DB;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    width: 50%;
+    font-size: larger;
+}
+.card-header{
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: #8693AB;    
+    border-bottom: 1px solid rgba(0,0,0,.125)
+}
+.card-body{
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem
+}
+.form-group{
+    padding: 10px;    
+}
+li {
+    padding-left: 10px;
+    font-size: 18px;
+    display: inline;
+    text-align: left;
+    text-transform: uppercase;
+    padding-right: 10px;
+    color:#380036;
+}
+.signin-active a {
+    padding-bottom: 10px;
+    color: #380036;
+    text-decoration: none;
+    border-bottom: solid 2px #1059FF;
+    transition: all .25s ease;
+    cursor: pointer
+}
+.signin-inactive a {
+    padding-bottom: 10px;
+    color: rgba(255, 255, 255, .3);
+    text-decoration: none;
+    border-bottom: none;
+    cursor: pointer;
+    position: relative;
+    right: 20%
+   }
+   .form-control{
+    height: 30px;
+    width: 200px;
+    position: relative;
+    right: 120%;
+    left: 50px;
+    border-radius: 10px;
+   }
+   .form-label{
+    position: relative;
+    right: 100%;
+    left: 25px;
+   }
+
+
+
+

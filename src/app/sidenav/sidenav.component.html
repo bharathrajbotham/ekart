@@ -1,0 +1,146 @@
+<mat-toolbar>
+
+    Responsive side navigation
+</mat-toolbar>
+
+<mat-sidenav-container>
+
+
+    <mat-sidenav #sidenav mode="side" opened class="vertical-menu mat-elevation-z8">
+        <button mat-button class="menu-button">
+            <mat-icon>dashboard</mat-icon>
+            <span>Dashboard</span>
+        </button>
+        <button mat-button class="menu-button">
+            <mat-icon>create_new_folder</mat-icon>
+            <span>Create Order</span>
+        </button>
+        <button mat-button class="menu-button">
+            <mat-icon>departure_board</mat-icon>
+            <span>Track order</span>
+        </button>
+        <button mat-button class="menu-button">
+            <mat-icon>receipt</mat-icon>
+            <span>Billing</span>
+        </button>
+
+        <mat-divider></mat-divider>
+
+        <button mat-button class="menu-button">
+            <mat-icon>help</mat-icon>
+            <span>Help Center</span>
+        </button>
+        <button mat-button class="menu-button">
+            <mat-icon>help</mat-icon>
+            <span>Enquiry</span>
+        </button>
+
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+
+
+        <div class="content mat-elevation-z8">
+            <form class="example-form">
+                <mat-form-field class="example-full-width">
+                    <mat-label>search</mat-label>
+                    <input matInput #message maxlength="256" placeholder="Ex. I need help with...">
+                    <mat-icon class='search-icon' color="primary" matPrefix>search</mat-icon>
+                </mat-form-field>
+            </form>
+            <div class="dropdown">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+                    Batch Number
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Link 1</a></li>
+                    <li><a class="dropdown-item" href="#">Link 2</a></li>
+                    <li><a class="dropdown-item" href="#">Link 3</a></li>
+                </ul>
+            </div>
+            <div class="dropdowns">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+                    Delivery status
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">pending</a></li>
+                    <li><a class="dropdown-item" href="#">completed</a></li>
+                    <li><a class="dropdown-item" href="#">inprogress</a></li>
+                </ul>
+            </div>
+            <div class="drop">
+                <h4>
+                    Batch :12345678
+                </h4>
+                <p class="status"> Completetion status 80%</p>
+                <mat-icon class="download">get_app</mat-icon><br>
+                <div class="row">
+                    <div class="col-lg-3">
+                        <p class="id1">pending</p>
+                        <span class="badge bg-secondary">325</span>
+                    </div>
+                    <div class="col-lg-3">
+                        <p class="id2">pending</p>
+                        <span class="badge bg-secondary">325</span>
+                    </div>
+                    <div class="col-lg-3">
+                        <p class="id2">pending</p>
+                        <span class="badge bg-secondary">325</span>
+                    </div>
+                    <div class="col-lg-3">
+                        <p class="id2">pending</p>
+                        <span class="badge bg-secondary">325</span>
+                    </div>
+
+
+                </div>
+
+            </div><br>
+            <div class="drop1">
+                <h4>
+                    Batch :12345678
+                </h4>
+                <p class="status"> Completetion status 80%</p>
+                <mat-icon class="download">get_app</mat-icon><br>
+                <div class="row">
+                    <div class="col-lg-3">
+                        <p class="id1">pending</p>
+                        <span class="badge bg-secondary">325</span>
+                    </div>
+                    <div class="col-lg-3">
+                        <p class="id2">pending</p>
+                        <span class="badge bg-secondary">325</span>
+                    </div>
+                    <div class="col-lg-3">
+                        <p class="id2">pending</p>
+                        <span class="badge bg-secondary">325</span>
+                    </div>
+                    <div class="col-lg-3">
+                        <p class="id2">pending</p>
+                        <span class="badge bg-secondary">325</span>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class=".col-lg-4">
+                <h1>batch</h1>
+
+            </div>
+            <div class=".col-lg-4">
+
+            </div>
+            <div class=".col-lg-4">
+
+            </div>
+
+        </div>
+
+
+
+    </mat-sidenav-content>
+
+</mat-sidenav-container>

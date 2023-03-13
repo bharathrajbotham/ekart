@@ -1,0 +1,140 @@
+mat-toolbar {
+    background: #004a9f;
+    color: white;
+}
+mat-sidenav {
+    margin: 16px;
+    width: 200px;
+    border-right: none;
+    background: #002b5c;
+    color: rgb(192, 72, 72);
+    border-radius: 10px;
+    padding: 16px;
+    text-align:left ;
+}
+.content {
+    height:100%;
+    border-radius: 10px;
+    margin: 16px;
+    margin-left: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: black;
+    background-color: #e9ecef;;
+}
+mat-sidenav-container {
+    height: calc(100vh - 65px);
+    
+}
+.vertical-menu {
+    
+    background-color: #22e0d7e3;
+    background-image: linear-gradient(315deg, #0ae967 0%, #f5f7fa 74%);
+    /* background-color: #63a4ff;
+    background-image: linear-gradient(315deg,  #83eaf1 0%, #63a4ff 74%); */
+  }
+  .example-form{
+    margin-top: -33%;
+    margin-left: 1%;
+       border: black;
+    border-radius: 40px;
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+    color: #0ae967;
+   
+  }
+  .example-full-width {
+    width: 60%;
+    height: 65px;
+    color: #0ae967;
+      }
+      .dropdown{
+        margin-left: -12%;
+        margin-top: -36%;
+      }
+      .dropdowns{
+        margin-right: -25%;
+        margin-top: -36%;
+        padding: 5px;
+       
+      }
+      .btn-primary{
+        background-color: #f5f7fa;
+        color: black;
+        width: 110px;
+
+      }
+      .btn{
+        font-size: .75rem
+        ;
+      }
+      .drop{
+        border:rgba(255, 255, 255, 0.762);
+        border-style:solid;
+        border-radius: 5px;
+        border-top-left-radius: 10px;
+        border-left: 6px solid blue;
+        margin: 2px;
+        background:whitesmoke;
+        width: 500px;
+        height: 125px;
+        position: relative;
+        left: -37%;
+        top: -10%;
+        padding: 5px;
+
+      }
+      .drop1{
+        border:white;
+        border-style:solid;
+        border-radius: 5px;
+        border-top-left-radius: 10px;
+        border-left: 6px solid blue;
+        margin: 10px;
+        background:white;
+        width: 500px;
+        height: 125px;
+        position: relative;
+        left: -35%;
+        top: -10%;
+        padding: 5px;
+      }
+      p.status{
+        color: skyblue;
+        font-style:initial;
+        font-size: 0.8rem;
+        margin-top: -5%;
+      }
+      .download{
+        margin-left: 85%;
+        margin-top: -45%;
+        position: relative;
+        top: -55%;
+             }
+             .id1{
+              font-style:initial;
+        font-size: 0.8rem;
+        margin-top: -50%;
+        
+             }
+             .id2{
+              font-style:initial;
+        font-size: 0.8rem;
+        margin-top: -50%;
+        
+             }
+             .badge{
+              width: 45px;
+              height: 20px;
+              font-size: small;
+              position: relative;
+              margin-top: -5%;
+              top: -50%;
+              right: 5%;
+              border-radius: 10px;
+                          
+             }
+             

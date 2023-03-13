@@ -1,0 +1,23 @@
+<p>chart works!</p>
+<h1>Quiz</h1>
+
+<!-- Display current question -->
+<p>{{ questions[currentQuestion].questionText }}</p>
+
+<!-- Display true/false buttons -->
+<div>
+  <button (click)="userAnswers[currentQuestion] = true" [disabled]="isQuizSubmitted">{{ 'True' }}</button>
+  <button (click)="userAnswers[currentQuestion] = false" [disabled]="isQuizSubmitted">{{ 'False' }}</button>
+</div>
+
+<!-- Display "Previous" and "Next" buttons -->
+<div>
+  <button (click)="previousQuestion()" [disabled]="currentQuestion === 0 || isQuizSubmitted">{{ 'Previous' }}</button>
+  <button (click)="nextQuestion()" [disabled]="currentQuestion === questions.length - 1 || isQuizSubmitted">{{ 'Next' }}</button>
+</div>
+
+<!-- Display "Submit" button -->
+<button (click)="submitQuiz()" [disabled]="isQuizSubmitted">{{ 'Submit' }}</button>
+
+<!-- Display user's score -->
+<p *ngIf="isQuizSubmitted">Your score: {{ score }}/{{ questions.length }} (

@@ -1,0 +1,31 @@
+
+/* Slideshow container */
+
+.container{
+    width: 1000px;
+    background-color:#eee;
+    position: relative;
+    top: 2%;
+    }
+.product{
+    position: relative;
+    top: -10%;
+}
+.row{
+    width: auto;
+}
+.carouselslide{
+    width: 100%;
+    top: -50%;
+}
+
+.item,img{
+    height: 200px ;
+    position: relative;
+    width:  90px ;
+    border: 1px solid red;
+    display: block;
+    top: -350%;
+    position: relative;
+   
+}
